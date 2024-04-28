@@ -1,0 +1,1 @@
+const findSmallest = (args) => args.sort((a,b)=> a-b)[0]
