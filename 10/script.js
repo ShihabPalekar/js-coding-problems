@@ -1,7 +1,17 @@
-function sum(numbers) {
-  if (numbers.length === 0) {
-    return 0;
-  } else {
-    return numbers.reduce((num, i) => num + i, 0);
-  }
+//Without using Set
+function uniqueValues(arr) {
+  const uniqueArr = [];
+  
+  arr.forEach(element => {
+    if (!uniqueArr.includes(element)) {
+      uniqueArr.push(element);
+    }
+  });
+  
+  return uniqueArr;
+}
+
+//With using Set
+function uniqueValuesSet(arr) {
+  return [...new Set(arr)];
 }
