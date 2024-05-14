@@ -5,3 +5,8 @@ function sum(numbers) {
     return numbers.reduce((num, i) => num + i, 0);
   }
 }
+
+//other approach
+function sumB(numbers) {
+  return numbers.reduce((a, b) => a + b, 0);
+}
