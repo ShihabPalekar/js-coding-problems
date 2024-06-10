@@ -7,6 +7,10 @@ function getAge2(inputString) {
   return parseInt(inputString);
 }
 
-function getAge(inputString) {
+function getAge3(inputString) {
+  return parseInt(inputString[0]);
+}
+
+function getAge4(inputString) {
   return +inputString[0];
 }
