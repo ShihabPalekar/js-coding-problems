@@ -15,3 +15,18 @@ function uniqueValues(arr) {
 function uniqueValuesSet(arr) {
   return [...new Set(arr)];
 }
+
+//Without using array.includes
+function uniqueValues2(arr) {
+  const uniqueArr = [];
+  const seen = {};
+  
+  arr.forEach(element => {
+    if (!seen[element]) {
+      seen[element] = true;
+      uniqueArr.push(element);
+    }
+  });
+  
+  return uniqueArr;
+}
