@@ -1,4 +1,4 @@
-//my solution
+//my solutions
 const isAnagram = (a, b) => {
   if (str1.length !== str2.length) {
     return false;
@@ -7,8 +7,16 @@ const isAnagram = (a, b) => {
   }
 };
 
+const isAnagram2 = (a, b) => {
+  if (a.trim().length !== b.trim().length){
+    return false
+  }
+  return a.trim().split("").sort().join("") === b.trim().split("").sort().join("")
+}
+
+
 //ChatGPT
-const isAnagram2 = (str1, str2) => {
+const isAnagram3 = (str1, str2) => {
   const sanitizeString = (str) => str.toLowerCase().replace(/[^a-z0-9]/g, "");
 
   str1 = sanitizeString(str1);
